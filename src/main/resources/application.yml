@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: spring-boot-testcontainers-quickstart
+
+  datasource:
+    url: ${POSTGRES_URL:jdbc:postgresql://localhost/customer}
+    username: ${POSTGRES_USER:postgres2024}
+    password: ${POSTGRES_PASS:postgres2024}
+    driver-class-name: org.postgresql.Driver
+
+  flyway:
+    enabled: true
+    baseline-on-migrate: false
+    out-of-order: true
+    ignore-missing-migrations: false

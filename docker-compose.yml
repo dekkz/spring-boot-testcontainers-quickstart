@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:17.0
+    environment:
+      - POSTGRES_PASSWORD=postgres2024
+      - POSTGRES_USER=postgres2024
+      - POSTGRES_DB=customer
+    ports:
+      - "5432:5432"
